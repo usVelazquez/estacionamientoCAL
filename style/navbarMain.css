@@ -1,0 +1,66 @@
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-sombra: rgba(0, 0, 0, 0.2);
+    --color-primario: #b03a2e;
+    --color-secundario-uno: #1e3c72;
+    --color-secundario-dos: #2874a6;
+    --color-terciario: #239b56;
+    --color-background: #F0F2F5;
+    --color-text-primario: #1e3c72;
+    --color-text-secundario: #afafaf;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor principal */
+.navbar-main {
+    display: flex;
+    justify-content: space-evenly;
+    justify-self: center;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 0.5rem;
+    margin-bottom: 1.1rem;
+    border-radius: 8px;
+    width: 25rem;
+}
+
+/* Botón individual */
+.navbar-main-card {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Íconos */
+.navbar-main-card img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+/* Estado normal */
+.navbar-main-card:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estado activo */
+.navbar-main-card.active {
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}

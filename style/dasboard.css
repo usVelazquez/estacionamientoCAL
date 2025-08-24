@@ -1,0 +1,197 @@
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-sombra: rgba(0, 0, 0, 0.2);
+    --color-primario: #b03a2e;
+    --color-secundario-uno: #1e3c72;
+    --color-secundario-dos: #2874a6;
+    --color-terciario: #239b56;
+    --color-background: #F0F2F5;
+    --color-text-primario: #1e3c72;
+    --color-text-secundario: #afafaf;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor general */
+body {
+    background-color: #f7f8fa;
+    color: #111;
+}
+
+/* Área principal */
+main {
+    padding: 20px;
+}
+
+/* Contenedor principal de la tarjeta */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    max-width: 100%;
+}
+
+
+/* Encabezado */
+.card .tittle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
+.card .tittle img {
+    width: 28px;
+    height: 28px;
+}
+
+.card h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+/* Subtexto */
+.card .text p {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.card .text span {
+    text-transform: uppercase;
+}
+
+/* Contenedor de análisis */
+.card {
+    display: grid;
+    gap: 16px;
+}
+
+.text{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.analysis-container {
+    display: flex;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+/* CARDS ANÁLISIS */
+.analysis {
+    flex: 1;
+    background-color: #f9fafb;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.analysis span {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.analysis p {
+    margin-top: 4px;
+    font-size: 13px;
+    color: #6b7280;
+    width: 100%;
+}
+
+.analysis:hover{
+    transform: translateY(-5px) scale(1.03);
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* CARDS ACCIONES*/
+.card-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 1.3rem;
+    justify-content: space-evenly;
+    gap: 1.3rem;
+
+}
+
+.activity{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.activity-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.activity-container div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.activity-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.activity-container p:first-child {
+    background: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* CONFIGURACIÓN */
+.config{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.config-container {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.config-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    transition: background 0.2s;
+    width: 100%;
+}
+
+.config-list a:hover {
+    background: #eef2f6;
+}
+

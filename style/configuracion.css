@@ -1,0 +1,108 @@
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-sombra: rgba(0, 0, 0, 0.2);
+    --color-primario: #b03a2e;
+    --color-secundario-uno: #1e3c72;
+    --color-secundario-dos: #2874a6;
+    --color-terciario: #239b56;
+    --color-background: #F0F2F5;
+    --color-text-primario: #1e3c72;
+    --color-text-secundario: #afafaf;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Contenedor general */
+body {
+    background-color: #f7f8fa;
+    color: #111;
+}
+
+/* Área principal */
+main {
+    padding: 20px;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e5e7eb;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Títulos y subtítulos */
+.card .text h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.card .text p {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+/* Formularios */
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111827;
+}
+
+.form input[type="text"] {
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 14px;
+    color: #111827;
+    outline: none;
+}
+
+.form input[type="text"]::placeholder {
+    color: #9ca3af;
+}
+
+/* Botones */
+.form input[type="submit"] {
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: background-color 0.2s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #333;
+}
