@@ -1,5 +1,5 @@
 <?php
-    $db_host = 'localhost';
+    $db_host = 'localhost:3305';
     $db_user = 'root';
     $db_pass = '';
     $db_name = 'db_estacionamientocal';
